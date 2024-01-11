@@ -63,17 +63,34 @@
 // console.log(numbers);
 // console.log("The largest number of " + numbers + " is " + largestNum);
 
-// <---------------ASSIGNMENT 2.8 ------------>
+// // <---------------ASSIGNMENT 2.8 ------------>
+// let numbers = [];
+// let copyNumbers = [];
+// let n = 0;
+// // create array of 10 random numbers between 0 and 99
+// while (n < 10) {
+//   numbers.push(Math.floor(Math.random() * 100));
+//   n++;
+// }
+// numbers.forEach((number) => {
+//   copyNumbers.push(number);
+// });
+// console.log(numbers);
+// console.log(copyNumbers);
+
+// <---------------ASSIGNMENT 2.9 ------------>
 let numbers = [];
-let copyNumbers = [];
 let n = 0;
 // create array of 10 random numbers between 0 and 99
 while (n < 10) {
   numbers.push(Math.floor(Math.random() * 100));
   n++;
 }
-numbers.forEach((number) => {
-  copyNumbers.push(number);
-});
-console.log(numbers);
-console.log(copyNumbers);
+console.log("array before removing elements: " + numbers);
+
+let i = 0;
+while (i < numbers.length) {
+  numbers.pop(i);
+  console.log(numbers);
+}
+console.log("array after removing elements: " + numbers);
