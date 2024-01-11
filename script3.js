@@ -29,6 +29,15 @@ console.log(newVar);
 let newVar2 = numbers.unshift(23);
 console.log(newVar);
 // array.unshift() returns new length of array
-let newVar3 = numbers.pop(-1);
+
+// ---3.8 ---
+let newVar3 = numbers.pop();
 console.log(newVar3);
 //array.pop returns removed value
+
+// ---3.9 ---
+let newVar4 = numbers.shift();
+console.log(newVar4);
+
+// ---3.10 ---
+console.log(numbers);
