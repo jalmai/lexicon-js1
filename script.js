@@ -13,5 +13,9 @@
 // console.log(iBool);
 // console.log(iString);
 // console.log(iNum);
-const name = "Namnet";
-name = "Ett annat namn";
+// const name = "Namnet";
+// name = "Ett annat namn";
+let number1 = 31;
+let number2 = 11;
+let theAnswer = number1 + number2;
+console.log(theAnswer);
