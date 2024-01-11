@@ -17,5 +17,9 @@
 // name = "Ett annat namn";
 let number1 = 31;
 let number2 = 11;
-let theAnswer = number1 + number2;
-console.log(theAnswer);
+let result1 = number1 - number2;
+let result2 = number1 * number2;
+let result3 = number1 / number2;
+console.log(result1);
+console.log(result2);
+console.log(result3);
