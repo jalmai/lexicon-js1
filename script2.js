@@ -17,15 +17,27 @@
 //   }
 // });
 // console.log(smallNumbers);
-let numbers = [];
-let n = 0;
-let sumNumbers = 0;
-while (n < 10) {
-  numbers.push(Math.floor(Math.random() * 100));
-  n++;
-}
-numbers.forEach((number) => {
-  sumNumbers = sumNumbers + number;
-  console.log("adding " + number + " to the total. New total is " + sumNumbers);
+
+// // <---------------ASSIGNMENT 2.4 ------------>
+// let numbers = [];
+// let n = 0;
+// let sumNumbers = 0;
+// while (n < 10) {
+//   numbers.push(Math.floor(Math.random() * 100));
+//   n++;
+// }
+// numbers.forEach((number) => {
+//   sumNumbers = sumNumbers + number;
+//   console.log("adding " + number + " to the total. New total is " + sumNumbers);
+// });
+// console.log("Sum of all numbers is " + sumNumbers);
+
+// <---------------ASSIGNMENT 2.5 ------------>
+let animals = ["dog", "cat", "elephant", "capybara", "ant"];
+animals.forEach((animal) => {
+  if (animal == "capybara") {
+    console.log(animal);
+  } else {
+    console.log("not a capybara");
+  }
 });
-console.log("Sum of all numbers is " + sumNumbers);
