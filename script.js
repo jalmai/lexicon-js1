@@ -23,6 +23,6 @@
 // console.log(result1);
 // console.log(result2);
 // console.log(result3);
-let a = 12;
-a += 5;
-console.log(a);
+// let a = 12;
+// a += 5;
+// console.log(a);
