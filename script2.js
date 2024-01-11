@@ -32,12 +32,17 @@
 // });
 // console.log("Sum of all numbers is " + sumNumbers);
 
-// <---------------ASSIGNMENT 2.5 ------------>
+// // <---------------ASSIGNMENT 2.5 ------------>
+// let animals = ["dog", "cat", "elephant", "capybara", "ant"];
+// animals.forEach((animal) => {
+//   if (animal == "capybara") {
+//     console.log(animal);
+//   } else {
+//     console.log("not a capybara");
+//   }
+// });
+
+// <---------------ASSIGNMENT 2.6 ------------>
 let animals = ["dog", "cat", "elephant", "capybara", "ant"];
-animals.forEach((animal) => {
-  if (animal == "capybara") {
-    console.log(animal);
-  } else {
-    console.log("not a capybara");
-  }
-});
+animals.splice(4, 1);
+console.log(animals);
