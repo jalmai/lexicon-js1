@@ -42,7 +42,23 @@
 //   }
 // });
 
-// <---------------ASSIGNMENT 2.6 ------------>
-let animals = ["dog", "cat", "elephant", "capybara", "ant"];
-animals.splice(4, 1);
-console.log(animals);
+// // <---------------ASSIGNMENT 2.6 ------------>
+// let animals = ["dog", "cat", "elephant", "capybara", "ant"];
+// animals.splice(4, 1);
+// console.log(animals);
+
+// <---------------ASSIGNMENT 2.7 ------------>
+let numbers = [];
+let n = 0;
+let largestNum = 0;
+while (n < 10) {
+  numbers.push(Math.floor(Math.random() * 100));
+  n++;
+}
+numbers.forEach((number) => {
+  if (number > largestNum) {
+    largestNum = number;
+  }
+});
+console.log(numbers);
+console.log("The largest number of " + numbers + " is " + largestNum);
