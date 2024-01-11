@@ -7,9 +7,11 @@
 // console.log(hej);
 // console.log(hejsan);
 // console.log(hello);
-let iBool = true;
-let iString = "a string much wow";
-let iNum = 256;
-console.log(iBool);
-console.log(iString);
-console.log(iNum);
+// let iBool = true;
+// let iString = "a string much wow";
+// let iNum = 256;
+// console.log(iBool);
+// console.log(iString);
+// console.log(iNum);
+const name = "Namnet";
+name = "Ett annat namn";
