@@ -47,18 +47,33 @@
 // animals.splice(4, 1);
 // console.log(animals);
 
-// <---------------ASSIGNMENT 2.7 ------------>
+// // <---------------ASSIGNMENT 2.7 ------------>
+// let numbers = [];
+// let n = 0;
+// let largestNum = 0;
+// while (n < 10) {
+//   numbers.push(Math.floor(Math.random() * 100));
+//   n++;
+// }
+// numbers.forEach((number) => {
+//   if (number > largestNum) {
+//     largestNum = number;
+//   }
+// });
+// console.log(numbers);
+// console.log("The largest number of " + numbers + " is " + largestNum);
+
+// <---------------ASSIGNMENT 2.8 ------------>
 let numbers = [];
+let copyNumbers = [];
 let n = 0;
-let largestNum = 0;
+// create array of 10 random numbers between 0 and 99
 while (n < 10) {
   numbers.push(Math.floor(Math.random() * 100));
   n++;
 }
 numbers.forEach((number) => {
-  if (number > largestNum) {
-    largestNum = number;
-  }
+  copyNumbers.push(number);
 });
 console.log(numbers);
-console.log("The largest number of " + numbers + " is " + largestNum);
+console.log(copyNumbers);
