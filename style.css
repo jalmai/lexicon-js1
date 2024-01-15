@@ -1,0 +1,9 @@
+body {
+  background-image: url("https://live.staticflickr.com/7294/9314082768_4719397aa4_b.jpg");
+  background-size: cover;
+}
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
