@@ -1,7 +1,10 @@
 let tempCelsius = 0;
+let increasingTemp = false;
+let decreasingTemp = false;
+const startHeating = setInterval(increaseTemp, 1000);
+
 let tempFarenheit = setFarenheit(tempCelsius);
 window.onload = function () {
-  setInterval(increaseTemp, 1000);
   setTemps();
 };
 function increaseTemp() {
@@ -12,12 +15,33 @@ function decreaseTemp() {
   tempCelsius--;
   setTemps();
 }
-function setFarenheit() {
-  return (tempCelsius * 9) / 5 + 32;
-}
+
 function setTemps() {
   document.getElementById("tempCelsius").innerHTML = tempCelsius;
   document.getElementById("tempFarenheit").innerHTML = setFarenheit();
+}
+function setFarenheit() {
+  return (tempCelsius * 9) / 5 + 32;
+}
+function heatingOn() {
+  if (!increasingTemp) {
+    if (decreasingTemp) {
+      clearInterval(stopHeating);
+      decreasingTemp = false;
+    }
+    startHeating = setInterval(increaseTemp, 1000);
+    increasingTemp = true;
+  }
+}
+function heatingOff() {
+  if (!decreasingTemp) {
+    if (increaseTemp) {
+      clearInterval(startHeating);
+      increasingTemp = false;
+    }
+    stopHeating = setInterval(decreaseTemp, 1000);
+    decreasingTemp = true;
+  }
 }
 // <!-- Tasks:
 // -The optimal temperature 75 degrees celsius, acceptable temperature range is from 73 to 77 degrees. This should be controlled entirely in a conditional statement within a loop.
