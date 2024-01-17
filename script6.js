@@ -1,10 +1,13 @@
-let currentTemp = prompt("What is the current temperature?");
+let currentTemp;
 let minAcceptableTemp = 73;
 let maxAcceptableTemp = 77;
 let tempWithinRange = false;
 
-function celsiusToFarenheits() {
-  return (tempCelsius * 9) / 5 + 32;
+function celsiusToFarenheit() {
+  return (currentTemp * 9) / 5 + 32;
+}
+function farenheitToCelsius(farenheit) {
+  return ((farenheit - 32) * 5) / 9;
 }
 function tempCheck() {
   if ((currentTemp >= minAcceptableTemp) & (currentTemp <= maxAcceptableTemp)) {
