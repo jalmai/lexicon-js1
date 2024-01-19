@@ -1,3 +1,7 @@
+// greeting();
+//greetingName("Kalle");
+//addNumbers(12, 12);
+//divideNumbers(12, 0);
 function greeting() {
   alert("Hello there my friend");
 }
@@ -10,6 +14,15 @@ function addNumbers(num1, num2) {
   return sum;
 }
 function divideNumbers(num1, num2) {
+  try {
+    if (isNaN(num1)) throw "First input is not a number";
+    if (isNaN(num2)) throw "Second input is not a number";
+    if (num1 === 0) throw "First number is 0. Unable to divide by 0.";
+    if (num2 === 0) throw "Second number is 0. Unable to divide by 0.";
+  } catch (err) {
+    console.log(err);
+  }
+
   // Create a function that takes two numbers as arguments and returns the quotient of those numbers. Save that to variable and log it to the console. Remember that you can't divide with zero. So a check must be than in order to prevent the calculation if you are trying to divide by zero. Log an error message to the console if that happens.
 }
 function area() {
