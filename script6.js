@@ -1,8 +1,8 @@
 // greeting();
 //greetingName("Kalle");
 //addNumbers(12, 12);
-//divideNumbers(12, 0);
-let message = area(25, 5);
+//let message = divideNumbers(12, 2);
+//let message = area(25, 5);
 console.log(message);
 function greeting() {
   alert("Hello there my friend");
@@ -24,7 +24,7 @@ function divideNumbers(num1, num2) {
   } catch (err) {
     console.log(err);
   }
-
+  return num1 / num2;
   // Create a function that takes two numbers as arguments and returns the quotient of those numbers. Save that to variable and log it to the console. Remember that you can't divide with zero. So a check must be than in order to prevent the calculation if you are trying to divide by zero. Log an error message to the console if that happens.
 }
 function area(length, width) {
