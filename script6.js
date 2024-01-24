@@ -34,7 +34,11 @@ function area(length, width) {
 function greetingFullName() {
   // Create a function that takes a first name and a last name as arguments. Return a template literals that says: "Hello [firstName] [lastName]! How are you doing?"
 }
-function kmMilesConv() {
+function kmMilesConv(distanceKm) {
+  console.log(
+    "Converting length in km to american miles by multiplying with 0.621."
+  );
+  return distanceKm * 0.621;
   // Create a function that takes a distance in kilometres as an arguments and returns the distanse in miles. (The American kind of miles). Save to a variable and log a description of the conversion to the console.
 }
 function celsiusFarenheitConv() {
